@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:text="Top RecyclerView" />
+
+    <TextView
+        android:id="@+id/tvEmptyListTop"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="#cccccc"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="Top List is Empty!"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_weight="1"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:text="Bottom RecyclerView" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/tvEmptyListBottom"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="Bottom List is Empty!"
+        android:background="#cccccc"
+        android:visibility="gone" />
+
+</LinearLayout>
